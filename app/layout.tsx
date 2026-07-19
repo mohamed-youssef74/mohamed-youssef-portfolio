@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Mohamed Youssef - Front-End Developer',
   description: 'Front-End Developer Portfolio - Building modern, responsive web applications with React, Next.js, and JavaScript',
-  generator: 'M.YOSSEF',
+  generator: 'M . YOUSSEF',
   icons: {
     icon: [
       {

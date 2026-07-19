@@ -32,14 +32,16 @@ export function Hero() {
             View My Projects
             <ExternalLink className="w-4 h-4 ml-2" />
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-border hover:bg-card"
-          >
-            Download Resume
-            <Download className="w-4 h-4 ml-2" />
-          </Button>
+          <a href="/MO-Youssef-CV-Resume.pdf" download>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-border hover:bg-card"
+            >
+              Download Resume
+              <Download className="w-4 h-4 ml-2" />
+            </Button>
+          </a>
         </div>
 
         {/* Scroll Indicator */}
