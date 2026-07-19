@@ -32,7 +32,7 @@ export function Hero() {
             View My Projects
             <ExternalLink className="w-4 h-4 ml-2" />
           </Button>
-          <a href="/MO-Youssef-CV-Resume.pdf" download>
+          <a href="/Mohamed-Youssef-CV.pdf" download>
             <Button
               size="lg"
               variant="outline"
