@@ -1,16 +1,12 @@
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { ThemeProvider } from '@/components/theme-provider'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: 'Mohamed Youssef - Front-End Developer',
-  description: 'Front-End Developer Portfolio - Building modern, responsive web applications with React, Next.js, and JavaScript',
-  generator: 'M . YOUSSEF',
+  title: 'Mohamed Youssef — Frontend Developer',
+  description:
+    'Selected work and portfolio of Mohamed Youssef, a frontend developer based in Damietta, Egypt.',
+  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -30,18 +26,21 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  colorScheme: 'light',
+  themeColor: '#f2f0eb',
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="font-sans antialiased">
-        <ThemeProvider>
-          {children}
-          {process.env.NODE_ENV === 'production' && <Analytics />}
-        </ThemeProvider>
+    <html lang="en" className="light">
+      <body className="antialiased">
+        {children}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
