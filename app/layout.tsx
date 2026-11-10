@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Mohamed Youssef — Frontend Developer',
   description:
     'Selected work and portfolio of Mohamed Youssef, a frontend developer based in Damietta, Egypt.',
-  generator: 'v0.app',
+  generator: 'm.youssef',
   icons: {
     icon: [
       {
